@@ -30,7 +30,7 @@ namespace myApp
     {
       try
       {
-        for (int i = 152; i <= 9100; i++)
+        for (int i = 312; i <= 9100; i++)
         {
           clArquivo arquivo = new clArquivo();
           arquivo = await GetMusicaAsync($"http://www.cante.com.br/baixar.php?id={i}");
@@ -45,7 +45,7 @@ namespace myApp
         }
       }
       catch (Exception e)
-      {
+      { 
         Console.WriteLine(e.Message);
       }
     }
