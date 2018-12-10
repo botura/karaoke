@@ -242,6 +242,15 @@
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
+      },
+      "System.Regex/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/System.Regex.dll": {}
+        },
+        "runtime": {
+          "lib/net20/System.Regex.dll": {}
+        }
       }
     }
   },
@@ -775,13 +784,25 @@
         "newtonsoft.json.bson.1.0.1.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
       ]
+    },
+    "System.Regex/1.0.0": {
+      "sha512": "yE3pXYtsBIu2Xr31p7++SfLITx8o8PM09FnXqDS+iBWcVXUy1AhZ44cTBTHHHj4Ajw870buVvBZHvTNDLi6eRg==",
+      "type": "package",
+      "path": "system.regex/1.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net20/System.Regex.dll",
+        "system.regex.1.0.0.nupkg.sha512",
+        "system.regex.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNet.WebApi.Client >= 5.2.7",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Newtonsoft.Json >= 12.0.1"
+      "Newtonsoft.Json >= 12.0.1",
+      "System.Regex >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -791,11 +812,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\botur\\Desktop\\Cante\\myApp\\myApp.csproj",
+      "projectUniqueName": "C:\\Users\\botur\\Desktop\\Cante\\myApp\\myApp.csproj",
       "projectName": "myApp",
-      "projectPath": "c:\\Users\\botur\\Desktop\\Cante\\myApp\\myApp.csproj",
+      "projectPath": "C:\\Users\\botur\\Desktop\\Cante\\myApp\\myApp.csproj",
       "packagesPath": "C:\\Users\\botur\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\botur\\Desktop\\Cante\\myApp\\obj\\",
+      "outputPath": "C:\\Users\\botur\\Desktop\\Cante\\myApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -837,6 +858,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.1, )"
+          },
+          "System.Regex": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [
@@ -846,5 +871,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'System.Regex 1.0.0' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v2.1'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "System.Regex",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

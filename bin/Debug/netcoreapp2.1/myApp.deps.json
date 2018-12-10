@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "d9b7b413230eda42ff699f68d0202393f493f159"
+    "signature": "77c6c3a30739cf76b2f3a59ab8de812eb2b300fd"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,7 +9,8 @@
       "myApp/1.0.0": {
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "12.0.1",
+          "System.Regex": "1.0.0"
         },
         "runtime": {
           "myApp.dll": {}
@@ -45,6 +46,14 @@
             "fileVersion": "1.0.1.20722"
           }
         }
+      },
+      "System.Regex/1.0.0": {
+        "runtime": {
+          "lib/net20/System.Regex.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -74,6 +83,13 @@
       "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
+    },
+    "System.Regex/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yE3pXYtsBIu2Xr31p7++SfLITx8o8PM09FnXqDS+iBWcVXUy1AhZ44cTBTHHHj4Ajw870buVvBZHvTNDLi6eRg==",
+      "path": "system.regex/1.0.0",
+      "hashPath": "system.regex.1.0.0.nupkg.sha512"
     }
   }
 }
